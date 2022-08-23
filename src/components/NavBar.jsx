@@ -2,10 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Routes, Route, Link } from "react-router-dom";
 
 export function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <>
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="#home" className='glitch'>React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -34,5 +36,17 @@ export function NavBar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+
+
+    <Link to="/">Home</Link>
+    <br></br>
+    <br></br>
+    <Link to="booktable">Tabela dos Livros</Link>
+    <br></br>
+    <br></br>
+    <Link to="formbook">Formulário</Link>
+
+    </>
+
   );
 }
