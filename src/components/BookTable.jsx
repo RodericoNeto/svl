@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import BootstrapTable from 'react-bootstrap-table-next';
 import paginationFactory from 'react-bootstrap-table2-paginator';
 
-function BookTable() {
+export default function BookTable() {
 
     let [comments, setComments] = useState([])
 
@@ -47,5 +47,3 @@ function BookTable() {
         </div>
     )
 }
-
-export default BookTable;

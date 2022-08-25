@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 
-export function FormBook() {
+export default function FormBook() {
   const [validated, setValidated] = useState(false);
   let [estados, setEstados] = useState([]);
   let [cidades, setCidades] = useState([]);

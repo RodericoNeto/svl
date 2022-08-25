@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { FormBook } from './components/FormBook';
+import React from 'react';
 import { NavBar } from './components/NavBar';
-import BookTable from './components/BookTable'
-import { Routes, Route, Link } from "react-router-dom";
+import BookTable from './components/BookTable';
+import { Routes, Route } from "react-router-dom";
+import FormBook from './components/FormBook';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <div className='container'>
-      <Routes>
-        <Route path="booktable" element={<BookTable />} />
-        <Route path="formbook" element={<FormBook />} />
-      </Routes>
-        {/* <FormBook />
-        <BookTable /> */}
-      </div>
+    <div>
+        <NavBar/>
+        <Routes>
+            <Route path='booktable' element={<BookTable/>} />
+            <Route path='formbook' element={<FormBook/>} />     
+        </Routes>
     </div>
-  );
+  )
 }
-
-export default App;
